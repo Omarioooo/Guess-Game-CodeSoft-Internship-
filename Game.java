@@ -41,6 +41,7 @@ public class Game {
                     }
                 } catch (InputMismatchException e) {
                     System.out.println("Invalid input! Please enter a number.");
+                    input.next(); // Clear invalid input
                 }
             }
         }
