@@ -18,7 +18,7 @@ public class Game {
         System.out.println("Number of rounds: " + numOfRounds);
 
         for (int i = 0; i < numOfRounds; i++) {
-            int targetNumber = (int) generateRandom();
+            int targetNumber = generateRandom();
             boolean validInput = false;
 
             while (!validInput) {
@@ -47,7 +47,7 @@ public class Game {
         System.out.println("Game over! Your score is: " + score);
     }
 
-    public static double generateRandom() {
-        return (Math.random() * 100) + 1;
+    public static int generateRandom() {
+        return (int) (Math.random() * 100) + 1;
     }
 }
