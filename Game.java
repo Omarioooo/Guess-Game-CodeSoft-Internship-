@@ -13,7 +13,6 @@ public class Game {
             numOfRounds = input.nextInt();
         } catch (InputMismatchException e) {
             System.out.println("Invalid input! Defaulting to 1 round.");
-            input.next(); // Clear invalid input
         }
 
         System.out.println("Number of rounds: " + numOfRounds);
